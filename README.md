@@ -70,6 +70,7 @@ Liquids
 1. Water
 2. Steam
 3. Lava
+4. Sewage Water
 
 ---------------------------- Craftable Resources ----------------------------------------
 1.  Brass
@@ -94,6 +95,9 @@ Liquids
 5. Water Pump
     - Requires: Electricity
     - Configured Harvest: Water
+6. Atmospheric Condenser
+    - Requires: Electricity
+    - Configured Harvest: Water
 
 ----------------------------- Producer Machines -----------------------------------------
 1. Furnace
@@ -112,6 +116,10 @@ Liquids
     - Requires: Electricity
     - Intake: Water + Wheat
     - Output: Biofuel (Liquid)
+5. Sewage Plant
+    - Requires: Electricity
+    - Intake: Sewage Water
+    - Output: Water
 
 ----------------------------- Sustainable Machines --------------------------------------
 1. Planters
