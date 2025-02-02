@@ -3,6 +3,7 @@ import cloneDeep from 'lodash.clonedeep'
 import V1 from './versions/v1'
 import GlobalConfigs from '../../configs/global'
 const DEFAULT_SAVE = cloneDeep(V1.DefaultSave)
+const SAVE_KEY = 'factorium'
 
 const version = (json) => {
     let state = json
@@ -18,7 +19,7 @@ const version = (json) => {
 const load = () => {
     if (GlobalConfigs.IS_WEB) {
         return new Promise((res) => {
-            const json = localStorage.getItem('save')
+            const json = localStorage.getItem(SAVE_KEY)
             if (json) res(cloneDeep(patch(version(JSON.parse(json)), DEFAULT_SAVE)))
             res(cloneDeep(DEFAULT_SAVE))
         })
@@ -34,7 +35,7 @@ const load = () => {
 const save = (state) => {
     if (GlobalConfigs.IS_WEB) {
         console.log(state)
-        localStorage.setItem('save', JSON.stringify(state))
+        localStorage.setItem(SAVE_KEY, JSON.stringify(state))
         return
     }
     window.api.save(state)
@@ -42,7 +43,7 @@ const save = (state) => {
 
 const remove = () => {
     if (GlobalConfigs.IS_WEB) {
-        localStorage.removeItem('save')
+        localStorage.removeItem(SAVE_KEY)
         return
     }
     window.api.remove()
