@@ -6,9 +6,9 @@ const onFixedUpdate = (state) => {
     return state
 }
 
-const ModuleExample = {
+const Inventory = {
     onUpdate,
     onFixedUpdate,
 }
 
-export default ModuleExample
+export default Inventory

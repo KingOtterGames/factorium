@@ -47,6 +47,10 @@ The goal is simple. Build a Dimension Generator and save humanity.
 4. Transfer things between land so you can focus things in certain areas
 5. These buildings will be heavy on electricity
 
+# Expansion Mechanics
+1. The more you expand, the more room you get, but the slower your belts become
+2. New extractable resources are added
+
 ---------------------------- Harvestable Resources ----------------------------------------
 Tier I
 1. Wood

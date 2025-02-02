@@ -1,7 +1,7 @@
-import ModuleExample from './ModuleExample'
+import Inventory from './Inventory'
 
 const Modules = {
-    ModuleExample,
+    Inventory,
 }
 
 export default Modules

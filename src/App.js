@@ -7,6 +7,7 @@ function App() {
     const [save, setSave] = useState(null)
 
     useEffect(() => {
+        Saves.remove()
         Saves.load().then((data) => {
             setSave(data)
         })

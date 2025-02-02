@@ -2,7 +2,6 @@ import { useEffect, useReducer } from 'react'
 import Dispatcher from '../../../engine/dispatcher/Dispatcher'
 import Saves from '../../../engine/saves/Saves'
 import GlobalConfigs from '../../../configs/global'
-import ModuleExampleActions from '../../../modules/ModuleExample/actions'
 import Sounds from '../../../engine/sounds/Sounds'
 import PropTypes from 'prop-types'
 
@@ -11,10 +10,6 @@ function Game({ save }) {
 
     useEffect(() => {
         Sounds.play('wow')
-        dispatch({
-            action: ModuleExampleActions.example,
-            payload: {},
-        })
     }, [])
 
     /**

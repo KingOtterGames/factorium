@@ -16,7 +16,7 @@
         "build": "react-scripts build",
         "lint": "eslint  --fix src/**/*.js",
         "format": "prettier --write \"./**/*.{js,jsx,mjs,cjs,ts,tsx,json}\"",
-        "test": "react-scripts test --watchAll=false",
+        "test": "react-scripts test --watchAll=false --verbose",
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "package": "sh ./package.sh",

@@ -3,6 +3,7 @@ const DefaultSave = {
     name: '',
     tab: '',
     subtab: '',
+    inventory: [],
 }
 
 const convertPreviousVersion = (_PreviousVersion) => {
