@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/factorium/static/css/main.058e06cb.css",
+    "main.js": "/factorium/static/js/main.91962fa7.js",
+    "static/media/wow.mp3": "/factorium/static/media/wow.83587d11f810ec8fd399.mp3",
+    "index.html": "/factorium/index.html",
+    "main.058e06cb.css.map": "/factorium/static/css/main.058e06cb.css.map",
+    "main.91962fa7.js.map": "/factorium/static/js/main.91962fa7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.058e06cb.css",
+    "static/js/main.91962fa7.js"
+  ]
+}
