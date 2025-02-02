@@ -6,7 +6,7 @@ const GlobalConfigs = {
     OFFLINE_PROGRESS: true,
 
     // Is Web Game
-    IS_WEB: false,
+    IS_WEB: true,
 }
 
 export default GlobalConfigs
